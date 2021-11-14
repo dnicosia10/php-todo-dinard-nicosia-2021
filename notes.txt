@@ -1,0 +1,27 @@
+NOTES:
+
+Do
+
+- fork
+- focus on PHP OOP
+- you want to use PHP Frameworks (MVC)? Go ahead
+- keep it simple
+- focus on PHP OOP
+- write additional javascript codes only if necessary
+- write additional css codes only if necessary
+- want to add additional HTML elements? Refer to bootstrap components
+- focus on PHP OOP
+- if you can, normalize your database
+- did I say focus on PHP OOP? focus on it
+
+
+Donts
+
+- do not download additional Javascript libraries
+- do not download additional CSS libraries
+- do not download additional PHP libraries (only PHP Frameworks are allowed)
+
+
+How to setup your own repo?
+
+- check the folder named _setting_up_your_own_repo
