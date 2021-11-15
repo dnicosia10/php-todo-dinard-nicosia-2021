@@ -1,3 +1,7 @@
+<?php
+require("./library/lib_handler.php");
+include('./assets/todo/index-backend.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="completed.html">Completed</a>
+                        <a class="nav-link" href="completed.php">Completed</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="settings.html">Settings</a>
+                        <a class="nav-link" href="settings.php">Settings</a>
                     </li>
                 </ul>
             </div>
@@ -35,13 +39,13 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <form class="mb-4 mt-5">
+                    <form class="mb-4 mt-5" method="POST" action="settings.php" >
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="inputGroupSelect01">Items per page</label>
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                                <option selected>Choose...</option>
+                            <select name="item_pp" class="custom-select" id="inputGroupSelect01">
+                                <option selected value="">Choose...</option>
                                 <option value="5">5</option>
                                 <option value="10">10</option>
                                 <option value="20">20</option>
@@ -49,7 +53,7 @@
                         </div>
                         <div class="form-group mt-5 text-center">
                             <button type="reset" class="btn btn-light">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                            <button type="submit" name="save_bttn" class="btn btn-primary">Save Changes</button>
                         </div>
                     </form>
                 </div>
